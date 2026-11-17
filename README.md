@@ -1,32 +1,54 @@
-# React + TypeScript + Vite
+# IVOD MWAMBA — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A bilingual personal portfolio showcasing my journey in software engineering, front-end development, inclusive design, and technology innovation.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+I am an aspiring software engineer interested in building modern, accessible, and user-centered digital experiences.
 
-## React Compiler
+This portfolio is also a practical learning project where I develop my skills through hands-on experimentation.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the Oxlint configuration
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- i18next
+- Lucide React
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Getting Started
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+Clone the repository:
+
+```bash
+git clone https://github.com/ivodmwamba/ivod-portfolio.git
+cd ivod-portfolio
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Available Scripts
+
+- `npm run dev` — Start the development server.
+- `npm run lint` — Check code quality.
+- `npm run build` — Build the production build.
+- `npm run preview` — Preview the production build.
+
+## Project Status
+
+**Work in progress.**
+
+---
+
+© IVOD MWAMBA. All rights reserved.

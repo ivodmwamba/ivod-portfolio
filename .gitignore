@@ -7,18 +7,62 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependencies
+node_modules/
+bower_components/
+jspm_packages/
+web_modules/
 
-# Editor directories and files
+# Build outputs
+dist/
+dist-ssr/
+build/
+.next/
+out/
+.nuxt/
+.output/
+.vuepress/dist/
+.svelte-kit/
+.astro/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Cache
+.npm/
+.cache/
+.parcel-cache/
+.vite/
+.nyc_output/
+coverage/
+.turbo/
+.nx/cache/
+.pnpm-store/
+
+# TypeScript
+*.tsbuildinfo
+
+# Vite temporary files
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Editors
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
+
+# Operating systems
 .DS_Store
+Thumbs.db
+
+# Windows / Visual Studio
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Other
+*.tgz
