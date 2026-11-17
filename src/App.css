@@ -1,0 +1,147 @@
+
+/* ========================================
+   IVOD MWAMBA — PREMIUM FOOTER
+======================================== */
+
+.site-footer {
+  position: relative;
+  padding: 72px 0 28px;
+  border-top: 1px solid var(--border-color);
+  background:
+    radial-gradient(
+      circle at 85% 100%,
+      rgba(32, 197, 200, 0.07),
+      transparent 35%
+    ),
+    var(--color-navy);
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1fr;
+  gap: 64px;
+  padding-bottom: 56px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+.footer-logo span {
+  color: var(--color-cyan);
+}
+
+.footer-tagline {
+  margin-bottom: 12px;
+  color: var(--color-white);
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.footer-description {
+  max-width: 300px;
+  font-size: 0.9rem;
+}
+
+.footer-navigation h3,
+.footer-social h3 {
+  margin-bottom: 20px;
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.footer-navigation nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-navigation nav a {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-silver);
+  font-size: 0.9rem;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-navigation nav a:hover {
+  color: var(--color-cyan);
+  transform: translateX(4px);
+}
+
+.footer-social p {
+  font-size: 0.9rem;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+}
+
+.footer-back-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-silver);
+  font-size: 0.85rem;
+  transition: color 0.25s ease;
+}
+
+.footer-back-top:hover {
+  color: var(--color-cyan);
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding-top: 56px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 28px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+}

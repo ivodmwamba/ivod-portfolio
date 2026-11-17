@@ -1,0 +1,59 @@
+
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "expertise": "Expertise",
+    "projects": "Projets",
+    "contact": "Contact",
+    "talk": "Parlons-en"
+  },
+  "hero": {
+    "welcome": "Bienvenue dans mon espace numérique",
+    "role": "Ingénieur logiciel junior",
+    "specialties": "Développeur front-end · Designer UI/UX inclusif",
+    "description": "Je construis des expériences numériques grâce à la technologie, à l’ingénierie, au design réfléchi et à l’innovation inclusive.",
+    "tagline": "Idées d’ingénierie. Concevoir l’avenir.",
+    "projectsButton": "Explorer mes projets",
+    "contactButton": "Me contacter"
+  },
+  "about": {
+    "label": "01 / À propos",
+    "title": "Construire avec un objectif.",
+    "description": "Mon parcours professionnel se concentre sur le développement logiciel, l’ingénierie front-end et les expériences numériques inclusives. Je développe également des idées à travers Ivod Tech Corporation (ITC)."
+  },
+  "expertise": {
+    "label": "02 / Expertise",
+    "title": "Domaines d’intervention.",
+    "software": {
+      "title": "Développement logiciel",
+      "description": "Créer des applications logicielles modernes."
+    },
+    "frontend": {
+      "title": "Développement front-end",
+      "description": "Créer des interfaces web réactives."
+    },
+    "design": {
+      "title": "Design UI/UX inclusif",
+      "description": "Concevoir des expériences numériques accessibles."
+    }
+  },
+  "projects": {
+    "label": "03 / Projets",
+    "title": "Des idées en réalité.",
+    "featured": "PROJET VEDETTE · ITC",
+    "transcripto": {
+      "title": "Transcripto by ITC",
+      "description": "Une plateforme de communication inclusive qui valorise la parole grâce à la transcription et aux outils de communication multilingue.",
+      "status": "Projet en cours de développement"
+    }
+  },
+  "contact": {
+    "label": "04 / Contact",
+    "title": "Construisons quelque chose de significatif.",
+    "description": "Ouvert aux relations professionnelles, aux collaborations et aux opportunités dans le développement logiciel et les technologies inclusives."
+  },
+  "footer": {
+    "rights": "Tous droits réservés."
+  }
+}

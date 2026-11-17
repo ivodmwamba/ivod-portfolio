@@ -1,0 +1,59 @@
+
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "expertise": "Expertise",
+    "projects": "Projects",
+    "contact": "Contact",
+    "talk": "Let's talk"
+  },
+  "hero": {
+    "welcome": "Welcome to my digital space",
+    "role": "Junior Software Engineer",
+    "specialties": "Front-End Developer · Inclusive UI/UX Designer",
+    "description": "I build digital experiences through technology, engineering, thoughtful design and inclusive innovation.",
+    "tagline": "Engineering ideas. Designing the future.",
+    "projectsButton": "Explore my projects",
+    "contactButton": "Contact me"
+  },
+  "about": {
+    "label": "01 / About",
+    "title": "Building with purpose.",
+    "description": "My professional journey focuses on software development, front-end engineering and inclusive digital experiences. I also develop ideas through Ivod Tech Corporation (ITC)."
+  },
+  "expertise": {
+    "label": "02 / Expertise",
+    "title": "Areas of focus.",
+    "software": {
+      "title": "Software Development",
+      "description": "Building modern software applications."
+    },
+    "frontend": {
+      "title": "Front-End Development",
+      "description": "Creating responsive web interfaces."
+    },
+    "design": {
+      "title": "Inclusive UI/UX Design",
+      "description": "Designing accessible digital experiences."
+    }
+  },
+  "projects": {
+    "label": "03 / Projects",
+    "title": "Ideas into reality.",
+    "featured": "FEATURED PROJECT · ITC",
+    "transcripto": {
+      "title": "Transcripto by ITC",
+      "description": "An inclusive communication platform that makes spoken language more useful through transcription and multilingual communication tools.",
+      "status": "Project in development"
+    }
+  },
+  "contact": {
+    "label": "04 / Contact",
+    "title": "Let's build something meaningful.",
+    "description": "Open to professional connections, collaborations and opportunities in software development and inclusive technologies."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

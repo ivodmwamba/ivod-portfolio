@@ -1,0 +1,46 @@
+
+import {
+  House,
+  UserRound,
+  Code2,
+  FolderCode,
+  BriefcaseBusiness,
+  GraduationCap,
+  Award,
+  Lightbulb,
+  Trophy,
+  BookOpen,
+  UsersRound,
+  Mail,
+  Menu,
+  X,
+  Languages,
+  Download,
+  ArrowUpRight,
+  ArrowUp,
+  Phone,
+} from 'lucide-react'
+
+export const icons = {
+  home: House,
+  about: UserRound,
+  expertise: Code2,
+  projects: FolderCode,
+  experience: BriefcaseBusiness,
+  education: GraduationCap,
+  certifications: Award,
+  innovation: Lightbulb,
+  achievements: Trophy,
+  publications: BookOpen,
+  leadership: UsersRound,
+  contact: Mail,
+  menu: Menu,
+  close: X,
+  language: Languages,
+  download: Download,
+  external: ArrowUpRight,
+  top: ArrowUp,
+  phone: Phone,
+}
+
+export type IconName = keyof typeof icons
