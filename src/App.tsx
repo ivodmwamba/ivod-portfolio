@@ -61,70 +61,30 @@ function App() {
             </div>
           </div>
 
-          {/* SIGNATURE VISUAL */}
+          {/* PROFILE PHOTO */}
           <div className="relative mx-auto flex w-full max-w-[440px] items-center justify-center">
             <div
               aria-hidden="true"
               className="absolute h-[330px] w-[330px] rounded-full bg-[#20C5C8]/10 blur-[100px]"
             />
 
-            <div className="relative aspect-square w-full overflow-hidden rounded-xl border border-white/10 bg-[#111F30] p-6 sm:p-9">
-              <div
-                aria-hidden="true"
-                className="absolute inset-0 opacity-20"
-                style={{
-                  backgroundImage:
-                    'linear-gradient(rgba(168,183,199,.25) 1px, transparent 1px), linear-gradient(90deg, rgba(168,183,199,.25) 1px, transparent 1px)',
-                  backgroundSize: '32px 32px',
-                }}
-              />
+            <div className="w-full max-w-[380px]">
+              <div className="relative overflow-hidden rounded-2xl border-2 border-[#20C5C8]/50 bg-[#111F30] shadow-[0_20px_60px_rgba(0,0,0,0.3)]">
+                <img
+                  src="/images/ivod-mwamba.jpg"
+                  alt="Portrait d’Ivod Mwamba"
+                  className="aspect-[4/5] w-full object-cover object-center"
+                />
+              </div>
 
-              <div className="relative flex h-full flex-col justify-between">
-                <div className="flex items-center justify-between">
-                  <span className="font-mono text-xs tracking-widest text-[#A8B7C7]">
-                    IM / 001
-                  </span>
+              <div className="mt-5 text-center">
+                <h2 className="font-heading text-xl font-bold text-white">
+                  Ingénieur logiciel junior
+                </h2>
 
-                  <span className="h-2 w-2 rounded-full bg-[#20C5C8] shadow-[0_0_15px_#20C5C8]" />
-                </div>
-
-                <div className="text-center">
-                  <div className="font-heading text-[clamp(6rem,17vw,10rem)] font-bold leading-none tracking-[-0.12em]">
-                    IM<span className="text-accent">.</span>
-                  </div>
-
-                  <div className="mx-auto mt-5 h-px w-16 bg-[#20C5C8]" />
-
-                  <p className="mt-5 font-mono text-[10px] uppercase tracking-[0.3em] text-[#A8B7C7]">
-                    IVOD MWAMBA
-                  </p>
-                </div>
-
-                <div className="flex items-end justify-between gap-4">
-                  <span className="max-w-[170px] font-mono text-[10px] uppercase leading-5 tracking-widest text-[#A8B7C7]">
-                    {isFrench ? (
-                      <>
-                        Technologie
-                        <br />
-                        Ingénierie
-                        <br />
-                        Inclusion
-                      </>
-                    ) : (
-                      <>
-                        Technology
-                        <br />
-                        Engineering
-                        <br />
-                        Inclusion
-                      </>
-                    )}
-                  </span>
-
-                  <span className="font-mono text-xs text-[#20C5C8]">
-                    2026
-                  </span>
-                </div>
+                <p className="mt-2 font-mono text-xs leading-6 tracking-wide text-[#20C5C8]">
+                  Développeur front-end · Designer UI/UX inclusif
+                </p>
               </div>
             </div>
           </div>
@@ -291,21 +251,114 @@ function App() {
       {/* CONTACT */}
       <section
         id="contact"
-        className="scroll-mt-24 border-t border-white/10"
+        className="scroll-mt-24 border-t border-white/10 bg-[#111F30]"
       >
-        <div className="container py-20 md:py-32">
-          <p className="section-label">
-            {t('contact.label')}
-          </p>
+        <div className="container py-20 md:py-28">
+          <div className="grid gap-14 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
+            {/* CONTACT INTRODUCTION */}
+            <div>
+              <p className="section-label">
+                {t('contact.label')}
+              </p>
 
-          <div className="max-w-4xl">
-            <h2 className="font-heading text-4xl font-bold leading-tight tracking-tight sm:text-6xl">
-              {t('contact.title')}
-            </h2>
+              <h2 className="mt-5 max-w-3xl font-heading text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+                {t('contact.title')}
+                <span className="text-[#20C5C8]">.</span>
+              </h2>
 
-            <p className="mt-8 max-w-2xl text-base leading-8 text-[#A8B7C7]">
-              {t('contact.description')}
-            </p>
+              <p className="mt-8 max-w-xl text-base leading-8 text-[#A8B7C7]">
+                {t('contact.description')}
+              </p>
+
+              <div className="mt-10 flex flex-wrap items-center gap-4">
+                <a
+                  href="https://github.com/ivodmwamba"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 border border-[#20C5C8] bg-[#20C5C8] px-6 py-4 font-heading text-sm font-semibold text-[#081827] transition-all duration-300 hover:bg-transparent hover:text-[#20C5C8]"
+                >
+                  {isFrench ? 'Découvrir mon GitHub' : 'Explore my GitHub'}
+                  <span aria-hidden="true">↗</span>
+                </a>
+
+                <a
+                  href="#home"
+                  className="inline-flex items-center gap-2 border border-white/15 px-6 py-4 font-heading text-sm font-semibold text-[#A8B7C7] transition-colors hover:border-[#20C5C8] hover:text-[#20C5C8]"
+                >
+                  {isFrench ? 'Retour à l’accueil' : 'Back to home'}
+                </a>
+              </div>
+            </div>
+
+            {/* CONTACT INFORMATION */}
+            <div className="flex flex-col justify-center">
+              <div className="border-y border-white/10">
+                <div className="py-6">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#20C5C8]">
+                    01 / PROFESSION
+                  </p>
+
+                  <p className="mt-3 font-heading text-lg font-semibold text-white">
+                    {isFrench
+                      ? 'Développement logiciel'
+                      : 'Software development'}
+                  </p>
+                </div>
+
+                <div className="border-t border-white/10 py-6">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#20C5C8]">
+                    02 / {isFrench ? 'LOCALISATION' : 'LOCATION'}
+                  </p>
+
+                  <p className="mt-3 font-heading text-lg font-semibold text-white">
+                    Kinshasa, RDC
+                  </p>
+                </div>
+
+                <div className="border-t border-white/10 py-6">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#20C5C8]">
+                    03 / {isFrench ? 'COLLABORATION' : 'COLLABORATION'}
+                  </p>
+
+                  <p className="mt-3 font-heading text-lg font-semibold text-white">
+                    {isFrench
+                      ? 'Ouvert aux collaborations'
+                      : 'Open to collaborations'}
+                  </p>
+                </div>
+              </div>
+
+              {/* SOCIAL LINKS */}
+              <div className="mt-8">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#A8B7C7]">
+                  {isFrench
+                    ? 'RETROUVEZ-MOI EN LIGNE'
+                    : 'FIND ME ONLINE'}
+                </p>
+
+                <div className="mt-5">
+                  <a
+                    href="https://github.com/ivodmwamba"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub - Ivod Mwamba"
+                    className="group inline-flex items-center gap-3 border border-white/10 px-5 py-4 transition-all duration-300 hover:border-[#20C5C8] hover:bg-[#081827]"
+                  >
+                    <span className="font-heading text-sm font-semibold text-white transition-colors group-hover:text-[#20C5C8]">
+                      GitHub
+                    </span>
+
+                    <span className="font-mono text-xs text-[#A8B7C7]">
+                      @ivodmwamba
+                    </span>
+
+                    <span className="text-[#20C5C8]" aria-hidden="true">
+                      ↗
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

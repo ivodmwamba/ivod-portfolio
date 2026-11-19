@@ -14,12 +14,18 @@ function Footer() {
   const isFrench = i18n.language.startsWith('fr')
 
   return (
-    <footer className="site-footer">
+    <footer className="site-footer border-t border-white/10 bg-[#061421]">
       <div className="container">
+        {/* MAIN FOOTER */}
         <div className="footer-main">
+          {/* BRAND */}
           <div className="footer-brand">
-            <a href="#home" className="footer-logo">
-              IM<span>.</span>
+            <a
+              href="#home"
+              className="footer-logo inline-flex items-center font-heading font-bold tracking-tight"
+              aria-label="Ivod Mwamba - Accueil"
+            >
+              IM<span className="text-[#20C5C8]">.</span>
             </a>
 
             <p className="footer-tagline">
@@ -28,13 +34,16 @@ function Footer() {
 
             <p className="footer-description">
               {isFrench
-                ? 'Technologie, ingénierie et innovation inclusive.'
-                : 'Technology, engineering and inclusive innovation.'}
+                ? 'Technologie, ingénierie et innovation inclusive. Je conçois des expériences numériques utiles, accessibles et tournées vers l’avenir.'
+                : 'Technology, engineering and inclusive innovation. I build useful, accessible and future-focused digital experiences.'}
             </p>
           </div>
 
+          {/* NAVIGATION */}
           <div className="footer-navigation">
-            <h3>{isFrench ? 'Navigation' : 'Navigation'}</h3>
+            <h3>
+              {isFrench ? 'Explorer' : 'Explore'}
+            </h3>
 
             <nav
               aria-label={
@@ -42,46 +51,58 @@ function Footer() {
                   ? 'Navigation de pied de page'
                   : 'Footer navigation'
               }
+              className="mt-5 flex flex-col gap-3"
             >
               {footerNavigation.map((item) => (
-                <a href={item.href} key={item.label}>
+                <a
+                  href={item.href}
+                  key={item.label}
+                  className="group inline-flex items-center gap-2 transition-colors hover:text-[#20C5C8]"
+                >
                   {t(`navigation.${item.label}`)}
+
                   <Icon name="external" size={13} />
                 </a>
               ))}
             </nav>
           </div>
 
+          {/* EXPERTISE */}
           <div className="footer-social">
             <h3>
-              {isFrench
-                ? 'Réseaux professionnels'
-                : 'Professional networks'}
+              {isFrench ? 'Domaines' : 'Focus areas'}
             </h3>
 
-            <p>
-              {isFrench
-                ? 'Profils professionnels à ajouter.'
-                : 'Professional profiles coming soon.'}
-            </p>
+            <ul className="mt-5 space-y-3">
+              <li>
+                {isFrench ? 'Développement logiciel' : 'Software development'}
+              </li>
 
-            <p className="mt-4">
-              {isFrench
-                ? 'Développement logiciel · Design inclusif'
-                : 'Software development · Inclusive design'}
-            </p>
+              <li>
+                {isFrench ? 'Développement front-end' : 'Front-end development'}
+              </li>
+
+              <li>
+                {isFrench ? 'Design UI/UX inclusif' : 'Inclusive UI/UX design'}
+              </li>
+
+              <li>
+                {isFrench ? 'Technologies accessibles' : 'Accessible technologies'}
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className="footer-bottom">
-          <p>
-            © 2026 IVOD MWAMBA. {t('footer.rights')}
+        {/* FOOTER BOTTOM */}
+        <div className="footer-bottom flex flex-col gap-4 border-t border-white/10 py-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs leading-6 text-[#A8B7C7]">
+            © 2026 IVOD MWAMBA.{' '}
+            {t('footer.rights')}
           </p>
 
-          <a href="#home" className="footer-back-top">
-            {isFrench ? 'Retour en haut' : 'Back to top'}
-            <Icon name="top" size={16} />
-          </a>
+          <p className="font-mono text-[10px] tracking-[0.18em] text-[#20C5C8]">
+            DESIGNED & BUILT WITH PURPOSE.
+          </p>
         </div>
       </div>
     </footer>

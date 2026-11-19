@@ -51,4 +51,4 @@ npm run dev
 
 ---
 
-© IVOD MWAMBA. All rights reserved.
+© Ivod Mwamba. All rights reserved.

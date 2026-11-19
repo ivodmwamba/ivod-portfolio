@@ -32,7 +32,7 @@ function Header() {
           aria-label="IVOD MWAMBA - Home"
           onClick={closeMenu}
         >
-          IM<span className="text-accent">.</span>
+          IM
         </a>
 
         <nav
